@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b16">
+<title>亗 𝑺𝒎𝒊𝒍𝒆 𝑮𝒊𝒓𝒍 𝑭𝑭 𝑻𝒐𝒖𝒓𝒏𝒂𝒎𝒆𝒏𝒕 𝑨𝒓𝒆𝒏𝒂</title>
+
+<style>
+:root {
+  --bg: #090b16;
+  --panel: #151b30;
+  --cyan: #54e7ff;
+  --pink: #ff4da6;
+  --text: #f5f7ff;
+  --muted: #aeb6d2;
+  --green: #66f2ad;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.wrap { width: 92%; max-width: 1100px; margin: auto; }
+header {
+  background: #101629;
+  padding: 16px 0;
+  border-bottom: 1px solid #303955;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.brand { font-size: 20px; font-weight: bold; }
+nav a { color: var(--muted); margin-left: 12px; text-decoration: none; }
+.btn {
+  display: inline-block;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--cyan);
+  color: #06101b;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero {
+  padding: 55px 0;
+  text-align: center;
+}
+.hero h1 { font-size: clamp(35px, 7vw, 60px); }
+.hero h1 span { color: var(--cyan); }
+.hero p { color: var(--muted); line-height: 1.7; }
+section { padding: 30px 0; }
+h2 { font-size: 30px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card {
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid #303955;
+  border-radius: 16px;
+}
+.tag {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 13px;
+}
+.card p { color: var(--muted); line-height: 1.6; }
+.details {
+  line-height: 2;
+  margin: 15px 0;
+}
+form {
+  background: var(--panel);
+  padding: 22px;
+  border-radius: 16px;
+  max-width: 650px;
+}
+label { display: block; margin: 14px 0 7px; }
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #3b4564;
+  background: #090e1d;
+  color: white;
+}
+.notice {
+  padding: 15px;
+  border: 1px solid #66552a;
+  border-radius: 10px;
+  color: #ffe6a0;
+  line-height: 1.6;
+}
+#message {
+  display: none;
+  white-space: pre-wrap;
+  background: #0d2b25;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 15px;
+  overflow-wrap: anywhere;
+}
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid #303955;
+}
+@media(max-width: 750px) {
+  .cards { grid-template-columns: 1fr; }
+  .nav { flex-wrap: wrap; }
+  nav a { margin-left: 5px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">亗 𝑺𝒎𝒊𝒍𝒆 𝑮𝒊𝒓𝒍 𝑭𝑭 𝑻𝒐𝒖𝒓𝒏𝒂𝒎𝒆𝒏𝒕 𝑨𝒓𝒆𝒏𝒂</div>
+    <nav>
+      <a href="#matches">Matches</a>
+      <a href="#register">Register</a>
+      <a href="#rules">Rules</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>YOUR NEXT <span>BOOYAH</span><br>STARTS HERE!</h1>
+    <p>Join the 亗 𝑺𝒎𝒊𝒍𝒆 𝑮𝒊𝒓𝒍 𝑭𝑭 Free Fire Community Tournament Arena.</p>
+    <a class="btn" href="#matches">Explore Matches</a>
+    <a class="btn" href="#register">Register Now</a>
+  </div>
+
+  <section id="matches">
+    <h2>Featured Matches</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <span class="tag">ENTRY FEE: CONFIRM WITH HOST</span>
+        <h3>Clash Squad Showdown</h3>
+        <p>Test your teamwork and aim in Clash Squad.</p>
+        <div class="details">
+          <div>Mode: Clash Squad</div>
+          <div>Team Size: 4 Players</div>
+          <div>Time: Confirm with host</div>
+          <div>Reward: Confirm with host</div>
+        </div>
+        <button class="btn choose" data-match="Clash Squad Showdown">
+          Register
+        </button>
+      </article>
+
+      <article class="card">
+        <span class="tag">ENTRY FEE: CONFIRM WITH HOST</span>
+        <h3>Battle Royale Lobby</h3>
+        <p>Survive, rotate smartly, and play as a squad.</p>
+        <div class="details">
+          <div>Mode: Battle Royale</div>
+          <div>Team Size: Squad</div>
+          <div>Time: Confirm with host</div>
+          <div>Reward: Confirm with host</div>
+        </div>
+        <button class="btn choose" data-match="Battle Royale Lobby">
+          Register
+        </button>
+      </article>
+
+      <article class="card">
+        <span class="tag">ENTRY FEE: CONFIRM WITH HOST</span>
+        <h3>Custom Room Night</h3>
+        <p>Play custom matches with community players.</p>
+        <div class="details">
+          <div>Mode: Custom Room</div>
+          <div>Team Size: Host announcement</div>
+          <div>Time: Confirm with host</div>
+          <div>Reward: Confirm with host</div>
+        </div>
+        <button class="btn choose" data-match="Custom Room Night">
+          Register
+        </button>
+      </article>
+
+    </div>
+
+    <p class="notice">
+      Important: Match timings, entry requirements, and rewards must be
+      confirmed with the tournament host before registering.
+    </p>
+  </section>
+
+  <section id="register">
+    <h2>Player Registration</h2>
+    <p>Fill in your details to create a registration message.</p>
+
+    <!-- Payment Box Added Here -->
+    <div class="card" style="margin-bottom: 20px; border-color: var(--cyan); max-width: 650px;">
+      <h3 style="margin-top:0; color:var(--cyan);">💳 Payment Method (EasyPaisa)</h3>
+      <p style="margin:5px 0;"><strong>EasyPaisa Number:</strong> 03291212186</p>
+      <p style="margin:5px 0;"><strong>Account Name:</strong> Smile Girl FF</p>
+      <p style="font-size:12px; color:var(--muted); margin-top:8px;">
+        * Payment karne ke baad apna screenshot aur TRX ID host ko zaroor bhejein.
+      </p>
+    </div>
+
+    <form id="regForm">
+
+      <label for="player">Player / Team Name *</label>
+      <input id="player" name="player" required maxlength="40"
+        placeholder="Enter your in-game name">
+
+      <label for="uid">Free Fire UID *</label>
+      <input id="uid" name="uid" required
+        inputmode="numeric" pattern="[0-9]{5,20}"
+        placeholder="Enter your numeric UID">
+
+      <label for="match">Choose Match *</label>
+      <select id="match" name="match" required>
+        <option value="">Select a match</option>
+        <option>Clash Squad Showdown</option>
+        <option>Battle Royale Lobby</option>
+        <option>Custom Room Night</option>
+      </select>
+
+      <label for="contact">Contact (Optional)</label>
+      <input id="contact" name="contact" maxlength="60"
+        placeholder="Optional contact information">
+
+      <label for="note">Team Members / Note</label>
+      <textarea id="note" name="note" rows="3" maxlength="200"
+        placeholder="Enter team names or a note"></textarea>
+
+      <label>
+        <input type="checkbox" id="consent" required
+          style="width:auto">
+        I agree to share these details with the tournament host.
+      </label>
+
+      <button class="btn" type="submit">
+        Create Registration Message
+      </button>
+
+      <div id="message" role="status"></div>
+
+      <button class="btn" id="copyBtn" type="button" hidden>
+        Copy Registration Message
+      </button>
+
+    </form>
+  </section>
+
+  <section id="rules">
+    <h2>Tournament Rules</h2>
+    <div class="card">
+      <p>🎮 Play fairly. Cheats and hacks are not allowed.</p>
+      <p>⏰ Confirm the match time with the host.</p>
+      <p>🛡️ Never share account passwords or OTPs.</p>
+      <p>🤝 Respect other players and the host.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> 亗 𝑺𝒎𝒊𝒍𝒆 𝑮𝒊𝒓𝒍 𝑭𝑭 𝑻𝒐𝒖𝒓𝒏𝒂𝒎𝒆𝒏𝒕 𝑨𝒓𝒆𝒏𝒂
+    <p>Community tournament website.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const form = document.getElementById("regForm");
+const matchSelect = document.getElementById("match");
+const message = document.getElementById("message");
+const copyBtn = document.getElementById("copyBtn");
+
+let registrationText = "";
+
+document.querySelectorAll(".choose").forEach(button => {
+  button.addEventListener("click", () => {
+    matchSelect.value = button.dataset.match;
+    document.getElementById("register").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+form.addEventListener("submit", event => {
+  event.preventDefault();
+
+  if (!form.reportValidity()) return;
+
+  const data = new FormData(form);
+
+  registrationText = [
+    "亗 𝑺𝒎𝒊𝒍𝒆 𝑮𝒊𝒓𝒍 𝑭𝑭 TOURNAMENT REGISTRATION",
+    "Player/Team: " + data.get("player").trim(),
+    "Free Fire UID: " + data.get("uid").trim(),
+    "Match: " + data.get("match"),
+    data.get("contact")
+      ? "Contact: " + data.get("contact").trim() : "",
+    data.get("note")
+      ? "Note: " + data.get("note").trim() : "",
+    "Payment Sent to EasyPaisa: 03291212186",
+    "Please confirm my registration and payment."
+  ].filter(Boolean).join("\n");
+
+  message.textContent = registrationText +
+    "\n\nThis message is not submitted online. Copy and send it to the host.";
+  message.style.display = "block";
+  copyBtn.hidden = false;
+});
+
+copyBtn.addEventListener("click", async () => {
+  if (!registrationText) return;
+
+  try {
+    await navigator.clipboard.writeText(registrationText);
+    message.textContent += "\n\nMessage copied!";
+  } catch (error) {
+    message.textContent +=
+      "\n\nAutomatic copy failed. Select and copy the message manually.";
+  }
+});
+</script>
+
+</body>
+</html>
